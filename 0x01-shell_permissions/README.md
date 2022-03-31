@@ -1,0 +1,1 @@
+ this is a shell switchinging command[D[D[D[D[D[D
