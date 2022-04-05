@@ -1,3 +1,3 @@
 #!/bin/bash
-tr '^[[:alpha:]]' /etc/ssh/ssh.d.congfig
+grep '^[[:alpha:]]' /etc/ssh/ssh.d.congfig
 
