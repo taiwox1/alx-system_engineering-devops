@@ -1,1 +1,1 @@
-Processes and signals
+process and signal
