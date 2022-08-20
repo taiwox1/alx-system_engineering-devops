@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times
 counter=1
-cas1=4
-cas2=9
-cas3=17
+cas1=5
+cas2=10
+cas3=18
 while [ $counter -le 20 ]
 do
   case $counter in
@@ -17,9 +17,7 @@ do
     $cas3)
       echo "bad luck from Italy"
       ;;
-    *)
-    echo "$counter"
-    ;;
    esac
+    echo "$counter"
   ((counter++))
 done
