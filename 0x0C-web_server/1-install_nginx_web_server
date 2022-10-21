@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Install Ngix with the following congiguration
+#+    Listens on port 80.
+#+    Returns a page containing "Holberton School" when queried
+#++    at the root with a curl GET request.
+
+apt-get update
+apt-get install -y nginx
+
+mkdir /etc/nginx/html
+touch /etc/ngnix/html/index.html
+
+echo "Hello World" > /etc/nginx/html/index.html
+printf % "server {
+	listen	80 default_server;
+	listen 	[::]:80 default_server;
+	root 	/etc/ngix/html;
+	index	index.html index.htm
+}
+" > /etc/ngix/ssites-avialable/default
+
+service ngnix restart	
